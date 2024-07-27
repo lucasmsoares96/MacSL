@@ -16,6 +16,7 @@ locale-gen
 perl -e exit
 mkdir /mnt/macos
 mkdir Mac
+ufw disable
 
 cat >> /etc/fstab << 'EOL'
 share                                                   /mnt/macos      9p      trans=virtio,version=9p2000.L,rw,_netdev,nofail     0   0
